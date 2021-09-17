@@ -1,0 +1,480 @@
+.f-cont, .text{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.icons{
+    margin: 30px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.f-item{
+    padding: 15px;
+}
+
+h1,h2,h3,h4,h5,h6{
+   font-family: Roboto, sans-serif;
+}
+
+/* BANNER */
+.banner{
+    /* width: 100%; */
+    text-align: center;
+    background-image: url(../images/dmin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    object-fit: cover;
+}
+
+.banner-item{
+    grid-area: b;
+    width: 95%;
+    text-align: left;
+    padding-top: 16rem;
+    padding-bottom: 4rem;
+    border: none;
+    /* border: 2px solid rgb(129, 238, 19); */
+}
+
+.b-text{    
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-bottom: 15px;
+    border-bottom: 14px solid #fff;
+}
+.b-text h4, .b-text h1{  
+    margin: 0;
+    padding: 0;
+}
+.b-text h4{
+    letter-spacing: 3px;
+    font-size: 3.8rem;
+    /* line-height: 1.5rem; */
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+}
+
+.b-text h1{
+    font-family: "Archivo Black";
+    font-size: 6rem;
+    /* line-height: 6.1rem; */
+    font-weight: 700;
+}
+.text span{
+    width: 90px;
+    height: 90px;
+    display: block;
+}
+.text p{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: inherit;
+}
+
+.svg-link, .svg-content{
+    width: 100%;
+    height: 100%;
+}
+.svg-content{
+    /* width: 100%;
+    height: 100%; */
+    fill: currentColor;
+}
+.text svg{
+    fill: #ffffff;
+}
+/* END BANNER */
+
+
+/* SERVICE */
+
+.service, .todo{
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 120px 0 70px;
+}
+
+.service h4, .about-text h6{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.2;
+    
+}
+.service h4{
+    color: #999999 !important;
+}
+
+.service h1, .q-text h2, .heading h1{
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 1.3;
+}
+
+.service p, .planning .grid-item:first-child div p, .q-text p, .our-services .grid-item p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: 'Open Sans',sans-serif;
+    line-height: 1.6;
+}
+.btn-book, .btn-call{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 36px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    text-align: center;
+    user-select: none;
+    letter-spacing: 1px;
+    margin: 20px 0 !important;
+    display: inline-block;
+    font-weight: 300;
+}
+
+.btn-book{
+    color: #ffffff;
+    background-color: #e71a23 !important;
+}
+
+.btn-call{
+    padding: 15px 52px;
+    border: 1px solid #454545 !important;
+    color: #454545 !important;
+    background-color: transparent !important
+}
+
+/* END SERVICES */
+
+/* planning */
+section.planning{
+    padding: 60px 10%;
+    overflow: auto;
+}
+
+.planning .grid-item{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.planning .grid-item img{
+    max-width: 100%;    
+    min-height: 380px;
+    flex: 40 0 66.66666667%;
+    /* object-fit: cover; */
+}
+.planning .grid-item:first-child div{
+    padding: 30px 60px;
+}
+.planning .grid-item:first-child div p{
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.p-text2{
+    margin-bottom: 50px;
+}
+.p-text2 h4, .p-text2 p{
+    font-weight: 700;
+    font-size: 2.6rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.p-text2 p{
+    color: #e71a23 !important;
+    font-size: 2rem;
+}
+/* END PLANNING */
+
+/* QUALITY SECTION */
+.quality{
+    background-image: url('../images/g.jpg');
+    background-position: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.q-img1{
+    margin-top: 15px;
+    min-height: 416px;
+    max-width: 100%;
+}
+.q-img1 img{
+    width: 100%;
+    height: auto;
+}
+.q-text{
+    margin-top: 25%;
+}
+.q-hr{
+    margin: 0;
+    border-bottom: 10px solid #e71a23;
+}
+.q-text h2{
+    color: #104e92;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+}
+
+.q-text p{
+    margin-top: 30px;
+}
+.q-text .btn-book{
+    margin-top: 0 !important;
+}
+/* END QUALITY SECTION */
+
+/* OUR SERVICES */
+.our-services{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.heading h1{
+    margin: 5px;
+}
+.service1 span, .service2 span, .service3 span{
+    width: 83px;
+    height: 83px;
+    text-align: center;
+    object-fit: contain;
+    padding: 18px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #e71a23;
+    display: block;
+}
+.our-services .grid-item h4{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 20px -2px;
+    line-height: 1.2;
+}
+
+.our-services .grid-item p{
+    font-style: italic;
+    color: #111111;
+}
+/* END OUR SERVICES */
+
+/* ABOUT US */
+    .about-us{
+        color: #ffffff;
+        background-color: #104e92;
+        padding: 60px 10%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .about-gallery{
+        /* background-color: yellow; */
+        display: flex;
+        padding: 0;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .about-gallery img{
+        /* display: block; */
+        flex: 1 auto 47.6%;
+        width: 47.6%;
+        margin-bottom: 20px;
+        height: 210px;
+    }
+    .about-text{
+        /* background-color: tomato; */
+        padding-left: 15%;
+    }
+    .about-text h6{
+        margin: 15px 0;
+        font-family: Montserrat, sans-serif !important;
+    }
+    .about-text h3{
+        font-size: 6rem;
+        line-height: 1;
+        margin: 5px 0;
+        font-weight: 400;
+    }
+/* END ABOUT US */
+
+
+/* TODO */
+    
+    .todo{
+        background-color: #ffffff;
+    }
+    .todo h2{
+        font-weight: 700;
+        margin: 0;
+        font-size: 2.25rem;
+        line-height: 1.1;
+    }
+
+    .todo p{
+        font-size: 1.875rem;
+        font-weight: 300;
+        margin: 30px 0;
+        line-height: 1.6;
+        color: #111111;
+    }
+
+    .todo .btn-book{
+        margin-right: 15px !important;
+    }
+
+/* END TODO */
+
+
+@media only screen and (max-width: 1199px){
+    .banner {
+        background-position: 34.74% 0%;
+    }
+
+    .b-text h4{
+        font-size: 3.625rem;
+    }
+    .b-text h1{
+        font-size: 5.875rem;
+    }
+
+    .p-text2 h4, .p-text2 p{
+        font-size: 1.8rem;
+    }
+
+    .about-text{
+        /* background-color: tomato; */
+        padding-left: 0;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 991px) {
+    .b-text h4{
+        font-size: 3rem;
+    }
+
+    .b-text h1{
+        font-size: 5rem;
+    }
+    .planning .grid-item div{
+        padding: 30px 60px;
+    }
+
+    .planning .grid-item img{
+        width: 100%;
+        max-height: 380px;
+    }
+    
+    .about-text h3{
+        font-size: 3rem;
+    }
+
+   .about-us{
+    padding: 60px 7%;
+   }
+}
+
+@media only screen and (max-width: 767px) {
+    .banner{
+        background-position: 81.49% 50%;
+    }
+    .banner-item{
+        padding-top: 27.5rem;
+    }
+    .icons{
+        display: none;
+    }
+    .planning .grid-item:first-child div{
+        padding: 15px 10px;
+    }
+
+    .planning .grid-item div{
+        padding: 0 10px;
+    }
+
+    .p-text2 h4, .p-text2 p{
+        font-size: 1.9rem;
+    }
+
+    .b-text h4{
+        font-size: 2.6rem;
+        line-height: 1.9;
+    }
+
+    .b-text h1{
+        font-size: 3.8rem;
+    }
+
+    .service h1{
+        font-size: 2.8rem;
+        line-height: 1.7;
+        line-height: initial;
+    }
+
+    .about-gallery{
+        /* background-color: yellow; */
+       
+        flex-flow: row wrap;
+        flex: 1 auto 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .about-gallery img{
+        width: 100%; 
+    }
+    .about-text{
+        padding-left: 0;
+    }
+    .about-text h3{
+        font-size: 2.25rem;
+    }
+
+    .todo h2{
+        font-size: 1.8rem;
+    }
+
+    .todo p{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .banner-item{
+        grid-area: b;
+        width: 100%;
+    }
+
+    .b-text h4{
+        font-size: 1.8rem;
+        line-height: 1.9;
+    }
+
+    .b-text h1{
+        font-size: 2.5rem;
+    }
+
+    .p-text2{
+        padding: 0px !important;
+    }
+    .p-text2 h4, .p-text2 p{
+        font-size: 1.1rem;
+    }
+
+    .planning .grid-item:first-child div{
+        padding: 10px 0px;
+    }
+
+    .planning .grid-item div p{
+        padding: 0;
+    }
+}
